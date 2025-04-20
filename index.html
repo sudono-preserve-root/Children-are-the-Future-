@@ -7,67 +7,78 @@
   <title>Children Are The Future</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-white text-gray-800">
+<body class="bg-white text-gray-800 leading-relaxed">
+
   <!-- Hero Section -->
   <header class="relative bg-cover bg-center h-screen" style="background-image: url('CATF.avif');">
-    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-      <div class="text-center text-white px-4">
-        <h1 class="text-4xl md:text-6xl font-bold mb-4">Children Are The Future</h1>
-        <p class="text-xl md:text-2xl max-w-2xl mx-auto">Empowering every child in Africa by expanding access to basic needs and equal opportunities.</p>
-      </div>
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white text-center px-4">
+      <h1 class="text-5xl font-extrabold mb-4">Children Are The Future</h1>
+      <p class="text-xl max-w-2xl">Empowering every child in Africa by expanding access to basic needs and equal opportunities.</p>
     </div>
   </header>
 
-  <!-- Mission & Vision -->
-  <section id="mission" class="py-16 px-6 md:px-20">
-    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-start">
-      <div>
-        <h2 class="text-3xl font-bold mb-4">Join Us in Supporting Education & Innovation</h2>
-        <p class="mb-4">Recognizing the inherent potential within children of under-resourced communities, our mission is to holistically empower young lives by providing access to fundamental resources that foster their intellectual, physical, and emotional well-being, thereby breaking the cycle of poverty.</p>
-        <p>Beginning in Nigeria, we deliver crucial support including books for education, clothing for dignity, food for nourishment, hygiene supplies for health, and financial assistance for stability.</p>
+  <!-- Mission and Vision -->
+  <section class="py-20 px-6 md:px-20 text-center bg-gray-50">
+    <h2 class="text-4xl font-bold mb-6">Our Mission & Vision</h2>
+    <p class="max-w-3xl mx-auto mb-4">Recognizing the inherent potential within children of under-resourced communities, our mission is to empower young lives by providing access to fundamental resources that support intellectual, physical, and emotional well-being.</p>
+    <p class="max-w-3xl mx-auto italic text-gray-600">“What if every child, regardless of where they are born, had a real chance to thrive?”</p>
+  </section>
+
+  <!-- Programs Section -->
+  <section class="bg-white py-20 px-6 md:px-20">
+    <h2 class="text-3xl font-bold text-center mb-12">Our Projects</h2>
+    <div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+      <div class="text-center">
+        <img src="learning-materials.png" alt="Materials for Learning" class="rounded shadow mb-4 mx-auto" />
+        <h3 class="font-bold text-xl mb-2">Materials for Learning</h3>
+        <p class="text-gray-700">We provide culturally relevant books and tools to help children learn effectively.</p>
       </div>
-      <div>
-        <h2 class="text-3xl font-bold italic">Our People, Our Passion: The Story Behind Our Mission.</h2>
-        <p class="mt-4">What if <strong>every child, regardless of where they are born, had a real chance to thrive?</strong></p>
-        <p>Driven by this belief, we provide vital resources in Nigeria to help them thrive, empowering future leaders and innovators.</p>
+      <div class="text-center">
+        <img src="education-teachers.png" alt="Continuing Education" class="rounded shadow mb-4 mx-auto" />
+        <h3 class="font-bold text-xl mb-2">Education for Teachers</h3>
+        <p class="text-gray-700">Our professional development programs equip teachers with modern skills and methods.</p>
+      </div>
+      <div class="text-center">
+        <img src="community-support.png" alt="Support for Communities" class="rounded shadow mb-4 mx-auto" />
+        <h3 class="font-bold text-xl mb-2">Support for Communities</h3>
+        <p class="text-gray-700">We work with local leaders to create safe, supportive environments for children.</p>
       </div>
     </div>
   </section>
 
-  <!-- Our Team -->
-  <section id="team" class="py-16 px-6 md:px-20">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-6">Meet Our Team</h2>
-      <div class="flex flex-col items-center">
-        <img src="c4e62ad3-b6e9-4f5a-94a0-2bb2f9d9020d.png" alt="Victoria Afolabi" class="w-48 h-48 rounded-full object-cover mb-4">
+  <!-- Team Section -->
+  <section class="py-20 bg-gray-100 px-6 text-center">
+    <h2 class="text-3xl font-bold mb-10">Meet Our Team</h2>
+    <div class="flex justify-center">
+      <div>
+        <img src="c4e62ad3-b6e9-4f5a-94a0-2bb2f9d9020d.png" alt="Victoria Afolabi" class="rounded-full w-40 h-40 object-cover mx-auto mb-4">
         <p class="text-xl font-semibold">Victoria Afolabi</p>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="bg-gray-50 py-16 px-6 md:px-20">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl font-bold mb-6">Contact Children Are The Future</h2>
-      <p class="mb-6">Feel free to contact us with any questions.</p>
-      <form class="grid gap-4">
-        <div class="grid md:grid-cols-2 gap-4">
-          <input type="text" placeholder="First Name" class="border p-2 rounded">
-          <input type="text" placeholder="Last Name" class="border p-2 rounded">
-        </div>
-        <input type="email" placeholder="Email" class="border p-2 rounded">
-        <textarea placeholder="Message" class="border p-2 rounded h-32"></textarea>
-        <button class="bg-black text-white px-6 py-2 rounded w-max">Submit</button>
-      </form>
-      <div class="mt-8">
-        <p><strong>Email:</strong> kikiafolabi05@gmail.com</p>
-        <p><strong>Phone:</strong> (973)-651-6181</p>
+  <section class="bg-white py-20 px-6 md:px-20">
+    <h2 class="text-3xl font-bold text-center mb-6">Contact Us</h2>
+    <form class="max-w-2xl mx-auto grid gap-4 text-left">
+      <div class="grid md:grid-cols-2 gap-4">
+        <input type="text" placeholder="First Name" class="border p-2 rounded" />
+        <input type="text" placeholder="Last Name" class="border p-2 rounded" />
       </div>
+      <input type="email" placeholder="Email" class="border p-2 rounded" />
+      <textarea placeholder="Your Message" class="border p-2 rounded h-32"></textarea>
+      <button class="bg-blue-900 text-white px-6 py-2 rounded w-max">Send Message</button>
+    </form>
+    <div class="text-center mt-8 text-gray-600">
+      <p><strong>Email:</strong> kikiafolabi05@gmail.com</p>
+      <p><strong>Phone:</strong> (973)-651-6181</p>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer class="bg-gray-900 text-white py-6 text-center">
-    <p class="text-sm">&copy; 2025 Children Are The Future | Made with love</p>
+    <p class="text-sm">&copy; 2025 Children Are The Future</p>
   </footer>
+
 </body>
 </html>
