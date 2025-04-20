@@ -8,7 +8,39 @@
 </head>
 <body class="bg-white text-gray-800 leading-relaxed">
 
-<!-- Top Navigation -->
+
+<!-- Navigation -->
+<nav class="bg-white shadow sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+    <a href="index.html" class="text-2xl font-bold text-blue-900">CATF</a>
+    <div class="hidden md:flex space-x-6 text-blue-900 font-medium">
+      <a href="index.html" class="hover:underline">Home</a>
+      <a href="about.html" class="hover:underline">About</a>
+      <a href="services.html" class="hover:underline">Services</a>
+      <a href="#contact" class="hover:underline">Contact</a>
+    </div>
+    <button id="menuToggle" class="md:hidden text-blue-900 focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+  <div id="mobileMenu" class="hidden md:hidden px-4 pb-4 space-y-2 text-blue-900 font-medium">
+    <a href="index.html" class="block">Home</a>
+    <a href="about.html" class="block">About</a>
+    <a href="services.html" class="block">Services</a>
+    <a href="#contact" class="block">Contact</a>
+  </div>
+</nav>
+
+<script>
+  document.getElementById('menuToggle').addEventListener('click', function () {
+    const menu = document.getElementById('mobileMenu');
+    menu.classList.toggle('hidden');
+  });
+</script>
+
 <nav class="bg-white shadow sticky top-0 z-50">
   <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
     <a href="index.html" class="text-2xl font-bold text-blue-900">CATF</a>
