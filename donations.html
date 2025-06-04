@@ -2,39 +2,74 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Donations | Children Are The Future</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-white text-gray-800 leading-relaxed">
+<body class="bg-white text-gray-800">
 
-  <!-- Donation Banner -->
-  <section class="bg-yellow-100 text-center py-16 px-6 md:px-20">
-    <h1 class="text-4xl font-bold text-blue-900 mb-4">October 1st, 2024 – Donation Day</h1>
-    <p class="text-lg max-w-3xl mx-auto text-gray-700 mb-8">We spent the day distributing meals, drinks, and essentials to the children of Heritage Home. These moments remind us why we do what we do—empowering futures through compassion.</p>
-    <a href="#donate" class="inline-block bg-yellow-400 text-black text-lg font-semibold px-6 py-3 rounded shadow hover:bg-yellow-500 transition">Make a Donation</a>
-  </section>
+<!-- Hero Section -->
+<section class="bg-yellow-100 text-center py-16 px-6">
+  <h1 class="text-4xl font-extrabold text-blue-900 mb-4">Support Our Mission</h1>
+  <p class="text-lg max-w-3xl mx-auto">Your donation helps us provide food, school materials, and healthcare to children in underserved communities.</p>
+</section>
 
-  <!-- Photo Grid -->
-  <section class="py-16 px-6 md:px-20 text-center">
-    <h2 class="text-3xl font-bold text-blue-900 mb-8">Captured Moments</h2>
+<!-- Donation Day Recap with Photos -->
+<section class="py-16 px-6 md:px-20 text-center">
+  <h2 class="text-3xl font-bold mb-4 text-blue-900">October 1st, 2024 – Donation Day</h2>
+  <p class="mb-8 text-lg max-w-3xl mx-auto">We distributed meals, drinks, and essentials to the children of Heritage Home. These moments remind us why we do what we do.</p>
+  <div class="grid md:grid-cols-3 gap-6">
+    <img src="donation1.jpg" alt="Donation Photo 1" class="rounded shadow w-full object-cover h-64">
+    <img src="donation2.jpg" alt="Donation Photo 2" class="rounded shadow w-full object-cover h-64">
+    <img src="donation3.jpg" alt="Donation Photo 3" class="rounded shadow w-full object-cover h-64">
+    <img src="donation4.jpg" alt="Donation Photo 4" class="rounded shadow w-full object-cover h-64">
+    <img src="donation5.jpg" alt="Donation Photo 5" class="rounded shadow w-full object-cover h-64">
+    <img src="donation6.jpg" alt="Donation Photo 6" class="rounded shadow w-full object-cover h-64">
+  </div>
+</section>
+
+<!-- Donation Options -->
+<section id="donate" class="bg-gray-50 py-20 px-6 md:px-20">
+  <h2 class="text-3xl font-bold text-center text-blue-900 mb-10">Make a Donation</h2>
+  <div class="max-w-3xl mx-auto grid gap-6 text-center">
     <div class="grid md:grid-cols-3 gap-6">
-      <img src="donation1.jpg" alt="Donation 1" class="rounded shadow-lg hover:scale-105 transition">
-      <img src="donation2.jpg" alt="Donation 2" class="rounded shadow-lg hover:scale-105 transition">
-      <img src="donation3.jpg" alt="Donation 3" class="rounded shadow-lg hover:scale-105 transition">
-      <img src="donation4.jpg" alt="Donation 4" class="rounded shadow-lg hover:scale-105 transition">
-      <img src="donation5.jpg" alt="Donation 5" class="rounded shadow-lg hover:scale-105 transition">
-      <img src="donation6.jpg" alt="Donation 6" class="rounded shadow-lg hover:scale-105 transition">
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="font-semibold text-xl mb-2">$25</h3>
+        <p class="text-gray-600">Provides school supplies for one child</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="font-semibold text-xl mb-2">$50</h3>
+        <p class="text-gray-600">Covers a week of healthy meals</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="font-semibold text-xl mb-2">$100</h3>
+        <p class="text-gray-600">Supports one teacher’s training program</p>
+      </div>
     </div>
-    <p class="mt-10 text-gray-600">Thank you to all donors, volunteers, and supporters for making this possible.</p>
-  </section>
 
-  <!-- Donation Call-to-Action -->
-  <section id="donate" class="bg-blue-900 text-white text-center py-16 px-6">
-    <h3 class="text-3xl font-bold mb-4">Help Us Reach More Children</h3>
-    <p class="mb-6 max-w-xl mx-auto text-lg">Your contribution directly supports meals, educational resources, and health essentials for underserved youth across Africa.</p>
-    <a href="https://www.paypal.com/donate" target="_blank" class="inline-block bg-yellow-400 text-black font-semibold px-6 py-3 rounded shadow hover:bg-yellow-500 transition">Donate via PayPal</a>
-  </section>
+    <form action="https://www.paypal.com/donate" method="post" target="_blank" class="mt-8">
+      <!-- Replace with your actual PayPal button settings -->
+      <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID" />
+      <label class="block mb-2 text-sm font-medium text-left">Make it Monthly:</label>
+      <input type="checkbox" name="recurring" class="mr-2"> Yes, make this a recurring donation
+      <br><br>
+      <button type="submit" class="bg-yellow-400 hover:bg-yellow-300 text-black font-semibold px-6 py-3 rounded shadow transition">Donate Now</button>
+    </form>
+  </div>
+</section>
+
+<!-- Social Proof -->
+<section class="py-16 px-6 md:px-20 bg-white text-center">
+  <h2 class="text-2xl font-bold text-blue-900 mb-6">What Our Donors Say</h2>
+  <blockquote class="italic max-w-2xl mx-auto text-gray-700">
+    "Seeing the direct impact of my donation makes me want to give again. CATF is truly changing lives." – Amina, donor since 2022
+  </blockquote>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12 text-center text-sm">
+  <p>&copy; 2025 Children Are The Future. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
