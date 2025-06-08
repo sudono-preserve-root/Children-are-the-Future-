@@ -4,9 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Donate | Children Are The Future</title>
+  <meta name="description" content="Support Children Are The Future by donating today. Help fund education, meals, and health programs for children in need." />
   <link rel="icon" href="favicon.ico" />
   <link rel="manifest" href="manifest.json" />
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <script defer data-domain="sudono-preserve-root.github.io" src="https://plausible.io/js/script.js"></script>
   <style>
     .nav-shadow {
@@ -19,6 +21,12 @@
     .donation-highlight {
       border: 2px solid #F59E0B;
     }
+    .gallery-img {
+      transition: transform 0.3s ease;
+    }
+    .gallery-img:hover {
+      transform: scale(1.03);
+    }
   </style>
 </head>
 <body class="bg-white text-gray-800">
@@ -26,7 +34,7 @@
 <!-- Navigation -->
 <nav class="bg-white nav-shadow sticky top-0 z-50">
   <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-    <a href="index.html" class="flex items-center space-x-2 hover:opacity-80 transition">
+    <a href="index.html" class="flex items-center space-x-2 hover:opacity-80 transition" data-aos="fade-right">
       <span class="text-2xl font-bold text-blue-900">CATF</span>
       <span class="hidden sm:inline text-blue-900 font-medium">Children Are The Future</span>
     </a>
@@ -56,31 +64,45 @@
   });
 </script>
 
-<!-- Hero -->
-<header class="bg-yellow-100 text-center py-20 px-6">
+<!-- Hero Section -->
+<section class="bg-yellow-100 text-center py-20 px-6">
   <div class="max-w-4xl mx-auto">
-    <h1 class="text-4xl md:text-5xl font-bold text-blue-900 mb-4">Make a Difference Today</h1>
-    <p class="text-lg md:text-xl max-w-2xl mx-auto">Your donation supports books, meals, school supplies, and sustainable programs that uplift children across Africa.</p>
-    <div class="mt-8">
+    <h1 class="text-4xl md:text-5xl font-extrabold text-blue-900 mb-4" data-aos="fade-up">Support Our Mission</h1>
+    <p class="text-lg md:text-xl max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">Your donation helps us provide food, school materials, and healthcare to children in underserved communities.</p>
+    <div class="mt-8" data-aos="fade-up" data-aos-delay="200">
       <a href="#donate" class="bg-blue-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 transition transform hover:scale-105">Donate Now</a>
     </div>
   </div>
-</header>
+</section>
+
+<!-- Donation Day Recap -->
+<section class="py-16 px-6 md:px-20 text-center">
+  <h2 class="text-3xl font-bold mb-4 text-blue-900" data-aos="fade-up">October 1st, 2024 – Donation Day</h2>
+  <p class="mb-8 text-lg max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">We distributed meals, drinks, and essentials to the children of Heritage Home. These moments remind us why we do what we do.</p>
+  <div class="grid md:grid-cols-3 gap-6">
+    <img src="donation1.jpg" alt="Smiling child receiving supplies" class="gallery-img rounded shadow w-full object-cover h-64" data-aos="zoom-in">
+    <img src="donation2.jpg" alt="Volunteers delivering food" class="gallery-img rounded shadow w-full object-cover h-64" data-aos="zoom-in" data-aos-delay="100">
+    <img src="donation3.jpg" alt="Group meal gathering" class="gallery-img rounded shadow w-full object-cover h-64" data-aos="zoom-in" data-aos-delay="200">
+    <img src="donation4.jpg" alt="Children with backpacks" class="gallery-img rounded shadow w-full object-cover h-64" data-aos="zoom-in">
+    <img src="donation5.jpg" alt="Smiling girls after receiving donations" class="gallery-img rounded shadow w-full object-cover h-64" data-aos="zoom-in" data-aos-delay="100">
+    <img src="donation6.jpg" alt="Community celebration" class="gallery-img rounded shadow w-full object-cover h-64" data-aos="zoom-in" data-aos-delay="200">
+  </div>
+</section>
 
 <!-- Impact Stats -->
 <section class="py-16 bg-blue-900 text-white">
   <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-3xl font-bold text-center mb-12">Your Impact in Action</h2>
+    <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Your Impact in Action</h2>
     <div class="grid md:grid-cols-3 gap-8 text-center">
-      <div class="bg-white bg-opacity-10 p-6 rounded-lg">
+      <div class="bg-white bg-opacity-10 p-6 rounded-lg" data-aos="fade-up" data-aos-delay="100">
         <p class="text-4xl font-bold mb-2">2,000+</p>
         <p>Books Distributed</p>
       </div>
-      <div class="bg-white bg-opacity-10 p-6 rounded-lg">
+      <div class="bg-white bg-opacity-10 p-6 rounded-lg" data-aos="fade-up" data-aos-delay="200">
         <p class="text-4xl font-bold mb-2">10,000+</p>
         <p>Meals Provided</p>
       </div>
-      <div class="bg-white bg-opacity-10 p-6 rounded-lg">
+      <div class="bg-white bg-opacity-10 p-6 rounded-lg" data-aos="fade-up" data-aos-delay="300">
         <p class="text-4xl font-bold mb-2">50+</p>
         <p>Schools Supported</p>
       </div>
@@ -88,94 +110,57 @@
   </div>
 </section>
 
-<!-- Donation Tiers -->
-<section id="donate" class="py-16 bg-white px-6">
-  <div class="max-w-6xl mx-auto">
-    <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Choose Your Impact Level</h2>
-    <div class="grid md:grid-cols-3 gap-8">
-      <div class="donation-card border-2 border-gray-200 p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-        <div class="text-center mb-6">
-          <span class="text-5xl">📘</span>
-        </div>
-        <h3 class="text-xl font-semibold text-center text-blue-900 mb-4">Basic Support</h3>
-        <p class="text-center text-gray-700 mb-6">Provide school supplies for one child</p>
-        <p class="text-3xl font-bold text-center text-yellow-500 mb-6">$25</p>
-        <a href="https://www.paypal.com/donate" target="_blank" class="block text-center bg-blue-900 text-white px-6 py-2 rounded font-medium hover:bg-blue-800 transition">Select</a>
+<!-- Donation Options -->
+<section id="donate" class="bg-gray-50 py-20 px-6 md:px-20">
+  <h2 class="text-3xl font-bold text-center text-blue-900 mb-10" data-aos="fade-up">Make a Donation</h2>
+  <div class="max-w-3xl mx-auto grid gap-6 text-center">
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="font-semibold text-xl mb-2">$25</h3>
+        <p class="text-gray-600">Provides school supplies for one child</p>
       </div>
-      
-      <div class="donation-card donation-highlight border-2 border-yellow-400 p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300 transform scale-105">
-        <div class="text-center mb-6">
-          <span class="text-5xl">🥗</span>
-        </div>
-        <h3 class="text-xl font-semibold text-center text-blue-900 mb-4">Nutrition Package</h3>
-        <p class="text-center text-gray-700 mb-6">Deliver 1 month of nutritious meals</p>
-        <p class="text-3xl font-bold text-center text-yellow-500 mb-6">$50</p>
-        <a href="https://www.paypal.com/donate" target="_blank" class="block text-center bg-yellow-400 text-black px-6 py-2 rounded font-semibold hover:bg-yellow-300 transition">Most Popular</a>
+      <div class="bg-white p-6 rounded shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="font-semibold text-xl mb-2">$50</h3>
+        <p class="text-gray-600">Covers a week of healthy meals</p>
       </div>
-      
-      <div class="donation-card border-2 border-gray-200 p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-        <div class="text-center mb-6">
-          <span class="text-5xl">📚</span>
-        </div>
-        <h3 class="text-xl font-semibold text-center text-blue-900 mb-4">Full Sponsorship</h3>
-        <p class="text-center text-gray-700 mb-6">Fund full academic & health support</p>
-        <p class="text-3xl font-bold text-center text-yellow-500 mb-6">$100+</p>
-        <a href="https://www.paypal.com/donate" target="_blank" class="block text-center bg-blue-900 text-white px-6 py-2 rounded font-medium hover:bg-blue-800 transition">Select</a>
+      <div class="bg-white p-6 rounded shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="300">
+        <h3 class="font-semibold text-xl mb-2">$100</h3>
+        <p class="text-gray-600">Supports one teacher's training program</p>
       </div>
     </div>
-    
-    <!-- Custom Amount -->
-    <div class="max-w-md mx-auto mt-16 bg-gray-50 p-8 rounded-lg shadow-sm">
-      <h3 class="text-xl font-semibold text-center text-blue-900 mb-6">Or Give a Custom Amount</h3>
-      <form class="space-y-4">
-        <div>
-          <label for="amount" class="block text-gray-700 mb-2">Donation Amount ($)</label>
-          <input type="number" id="amount" min="5" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-yellow-400" placeholder="Enter amount">
-        </div>
-        <div>
-          <label for="frequency" class="block text-gray-700 mb-2">Frequency</label>
-          <select id="frequency" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-yellow-400">
-            <option>One-time</option>
-            <option>Monthly</option>
-            <option>Quarterly</option>
-            <option>Annually</option>
-          </select>
-        </div>
-        <button type="submit" class="w-full bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition transform hover:scale-105">Continue to Payment</button>
-      </form>
-    </div>
+
+    <form action="https://www.paypal.com/donate" method="post" target="_blank" class="mt-8" data-aos="fade-up" data-aos-delay="400">
+      <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID" />
+      <div class="mb-4 text-left max-w-md mx-auto">
+        <label class="block mb-2 text-sm font-medium">Make it Monthly:</label>
+        <input type="checkbox" name="recurring" class="mr-2"> Yes, make this a recurring donation
+      </div>
+      <button type="submit" class="bg-yellow-400 hover:bg-yellow-300 text-black font-semibold px-8 py-3 rounded-lg shadow transition transform hover:scale-105">Donate Now</button>
+      <p class="text-sm text-gray-500 mt-4">100% of your donation goes to direct services and programs. We value your trust.</p>
+    </form>
   </div>
+</section>
+
+<!-- Donor Testimonial -->
+<section class="py-16 px-6 md:px-20 bg-white text-center">
+  <h2 class="text-2xl font-bold text-blue-900 mb-6" data-aos="fade-up">What Our Donors Say</h2>
+  <blockquote class="italic max-w-2xl mx-auto text-gray-700 text-lg" data-aos="fade-up" data-aos-delay="100">
+    "Seeing the direct impact of my donation makes me want to give again. CATF is truly changing lives." – Amina, donor since 2022
+  </blockquote>
 </section>
 
 <!-- Wix Gallery Embed -->
 <section class="bg-gray-50 py-16 px-6">
   <div class="max-w-5xl mx-auto">
-    <h2 class="text-3xl font-bold text-center mb-6 text-blue-900">See the Smiles You Help Create</h2>
-    <p class="text-lg text-center mb-8 text-gray-700 max-w-3xl mx-auto">We're proud to show you real faces and real moments made possible by generous supporters like you.</p>
-    <div class="relative pb-[56.25%] h-0 overflow-hidden rounded-lg shadow-lg">
+    <h2 class="text-3xl font-bold text-center mb-6 text-blue-900" data-aos="fade-up">See the Smiles You Help Create</h2>
+    <p class="text-lg text-center mb-8 text-gray-700 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">We're proud to show you real faces and real moments made possible by generous supporters like you.</p>
+    <div class="relative pb-[56.25%] h-0 overflow-hidden rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="200">
       <iframe 
         src="https://kikiafolabi05.wixsite.com/website/gallery" 
         class="absolute top-0 left-0 w-full h-full border-0"
         allowfullscreen
         loading="lazy"
         title="CATF Gallery"></iframe>
-    </div>
-  </div>
-</section>
-
-<!-- Testimonials -->
-<section class="py-16 bg-white px-6">
-  <div class="max-w-4xl mx-auto">
-    <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Donor Stories</h2>
-    <div class="space-y-8">
-      <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
-        <p class="text-gray-700 italic mb-4">"Seeing the photos of children with their new books made me realize how small donations create big changes. I now give monthly."</p>
-        <p class="font-semibold text-blue-900">— Sarah K., Monthly Donor</p>
-      </div>
-      <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
-        <p class="text-gray-700 italic mb-4">"My company matched my donation, doubling our impact. The transparency in how funds are used is what convinced us to give."</p>
-        <p class="font-semibold text-blue-900">— Michael T., Corporate Partner</p>
-      </div>
     </div>
   </div>
 </section>
@@ -223,6 +208,16 @@
 <a href="donations.html" class="fixed bottom-6 right-6 bg-yellow-400 text-black px-5 py-3 rounded-full shadow-lg font-semibold hover:bg-yellow-300 transition transform hover:scale-110 z-50 flex items-center">
   <span class="hidden sm:inline mr-2">Donate</span>💛
 </a>
+
+<!-- AOS Script -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true,
+    offset: 120
+  });
+</script>
 
 </body>
 </html>
