@@ -5,6 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Us | Children Are The Future</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
 </head>
 <body class="bg-white text-gray-800">
 
@@ -15,7 +26,7 @@
 </header>
 
 <!-- Mission Section -->
-<section class="py-16 px-6 md:px-20 bg-gray-50">
+<section class="py-16 px-6 md:px-20 bg-gray-50 fade-in">
   <div class="max-w-5xl mx-auto text-center">
     <h2 class="text-3xl font-bold mb-4">Our Mission</h2>
     <p class="text-lg mb-4">Children Are The Future (CATF) was founded with the belief that access to education, nutrition, and opportunity should not be determined by geography. Our mission is to empower young people in Nigeria with the tools they need to succeed and thrive through comprehensive support—educational, physical, and emotional.</p>
@@ -24,24 +35,25 @@
 </section>
 
 <!-- Meet the Team Section -->
-<section class="py-20 px-6 md:px-20 bg-white">
+<section class="py-20 px-6 md:px-20 bg-white fade-in">
   <div class="max-w-5xl mx-auto text-center">
     <h2 class="text-3xl font-bold mb-12">Meet the Team</h2>
     <div class="flex flex-col items-center">
-      <img src="founder-kiki.jpg" alt="Victoria (Kiki) Afolabi" class="rounded-full w-44 h-44 object-cover mb-4 shadow-md">
+      <a href="https://www.linkedin.com/in/victoria-kiki-afolabi/" target="_blank" rel="noopener noreferrer">
+        <img src="founder-kiki.jpg" alt="Victoria (Kiki) Afolabi" class="rounded-full w-44 h-44 object-cover mb-4 shadow-md">
+      </a>
       <h3 class="text-xl font-semibold">Victoria Afolabi</h3>
       <p class="text-gray-600 mt-2 max-w-xl">Founder & Director of Children Are The Future. Victoria’s passion for educational equity and community empowerment has driven CATF’s vision and impact since its inception.</p>
     </div>
   </div>
 </section>
 
-
 <!-- Founder Spotlight -->
-<section class="bg-white py-20 px-6 md:px-20">
+<section class="bg-white py-20 px-6 md:px-20 fade-in">
   <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
     <img src="founder-kiki.jpg" alt="Victoria Afolabi headshot" class="rounded-lg shadow-md object-cover w-full h-auto">
-    <div>
-      <h2 class="text-3xl font-bold mb-4">Meet Our Founder</h2>
+    <div class="bg-blue-50 p-6 rounded-lg shadow-md">
+      <h2 class="text-3xl font-bold mb-4 text-blue-900">Meet Our Founder</h2>
       <p class="text-gray-700 mb-2">
         <strong>Victoria “Kiki” Afolabi</strong> is a visionary leader, passionate about equity in education and access to opportunity. With a heart rooted in service and a mind sharpened by advocacy, Kiki founded Children Are The Future to bridge the gap for children in underserved communities, especially in Nigeria.
       </p>
@@ -57,5 +69,21 @@
   <p>&copy; 2025 Children Are The Future | All rights reserved.</p>
 </footer>
 
+<!-- Scroll Animation Script -->
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.fade-in').forEach(section => {
+    observer.observe(section);
+  });
+</script>
+
 </body>
 </html>
+
