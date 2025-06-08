@@ -14,8 +14,19 @@
 <!-- Navigation -->
 <nav class="bg-white shadow sticky top-0 z-50">
   <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+    <!-- Hamburger Menu (Top Left) -->
+    <button id="menuToggle" class="md:hidden text-blue-900 focus:outline-none mr-2">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <!-- Logo -->
     <a href="index.html" class="text-2xl font-bold text-blue-900">CATF</a>
-    <div class="hidden md:flex space-x-6 text-blue-900 font-medium items-center">
+
+    <!-- Desktop Navigation -->
+    <div class="hidden md:flex space-x-6 text-blue-900 font-medium items-center ml-auto">
       <a href="index.html" class="hover:underline">Home</a>
       <a href="about.html" class="hover:underline">About</a>
       <a href="services.html" class="hover:underline">Services</a>
@@ -23,12 +34,9 @@
       <a href="#contact" class="hover:underline">Contact</a>
       <a href="donations.html" class="bg-yellow-400 text-black px-4 py-2 rounded shadow font-semibold hover:bg-yellow-300 transition">Donate Now</a>
     </div>
-    <button id="menuToggle" class="md:hidden text-blue-900 focus:outline-none">
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-      </svg>
-    </button>
   </div>
+
+  <!-- Mobile Navigation -->
   <div id="mobileMenu" class="hidden md:hidden px-4 pb-4 space-y-2 text-blue-900 font-medium">
     <a href="index.html" class="block">Home</a>
     <a href="about.html" class="block">About</a>
@@ -111,49 +119,6 @@
   </div>
 </section>
 
-<!-- Navigation -->
-<nav class="bg-white shadow sticky top-0 z-50">
-  <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-    <!-- Hamburger Menu (Top Left) -->
-    <button id="menuToggle" class="md:hidden text-blue-900 focus:outline-none mr-2">
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-          d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-    </button>
-
-    <!-- Logo -->
-    <a href="index.html" class="text-2xl font-bold text-blue-900">CATF</a>
-
-    <!-- Desktop Nav -->
-    <div class="hidden md:flex space-x-6 text-blue-900 font-medium items-center ml-auto">
-      <a href="index.html" class="hover:underline">Home</a>
-      <a href="about.html" class="hover:underline">About</a>
-      <a href="services.html" class="hover:underline">Services</a>
-      <a href="donations.html" class="hover:underline">Donations</a>
-      <a href="#contact" class="hover:underline">Contact</a>
-      <a href="donations.html" class="bg-yellow-400 text-black px-4 py-2 rounded shadow font-semibold hover:bg-yellow-300 transition">Donate Now</a>
-    </div>
-  </div>
-
-  <!-- Mobile Menu -->
-  <div id="mobileMenu" class="hidden md:hidden px-4 pb-4 space-y-2 text-blue-900 font-medium">
-    <a href="index.html" class="block">Home</a>
-    <a href="about.html" class="block">About</a>
-    <a href="services.html" class="block">Services</a>
-    <a href="donations.html" class="block">Donations</a>
-    <a href="#contact" class="block">Contact</a>
-    <a href="donations.html" class="block bg-yellow-400 text-black px-3 py-2 rounded shadow font-semibold hover:bg-yellow-300 transition">Donate Now</a>
-  </div>
-</nav>
-
-  <script>
-  document.getElementById('menuToggle').addEventListener('click', function () {
-    document.getElementById('mobileMenu').classList.toggle('hidden');
-  });
-</script>
-
-
 <!-- Fixed Donate Button -->
 <a href="donations.html" class="fixed bottom-6 right-6 bg-yellow-400 text-black px-4 py-2 rounded-full shadow-lg font-semibold hover:bg-yellow-300 transition z-50">
   Donate 💛
@@ -186,5 +151,3 @@
 
 </body>
 </html>
-
-
