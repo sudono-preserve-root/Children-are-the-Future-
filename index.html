@@ -8,6 +8,13 @@
   <link rel="manifest" href="manifest.json" />
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
   <script defer data-domain="sudono-preserve-root.github.io" src="https://plausible.io/js/script.js"></script>
+  <style>
+    .hero-background {
+      background-image: url('data:image/avif;base64,<--BASE64_STRING_HERE-->');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
 </head>
 <body class="bg-white text-gray-800 leading-relaxed">
 
@@ -19,6 +26,7 @@
       <span class="hidden sm:inline text-blue-900 font-medium">Children Are The Future</span>
     </a>
     <div class="hidden md:flex space-x-6 text-blue-900 font-medium items-center">
+      <a href="index.html" class="hover:underline">Home</a>
       <a href="about.html" class="hover:underline">About</a>
       <a href="services.html" class="hover:underline">Our Work</a>
       <a href="donations.html" class="bg-yellow-400 text-black px-4 py-2 rounded shadow font-semibold hover:bg-yellow-300 transition">Donate</a>
@@ -30,6 +38,7 @@
     </button>
   </div>
   <div id="mobileMenu" class="hidden md:hidden px-4 pb-4 space-y-3 text-blue-900 font-medium">
+    <a href="index.html" class="block py-2 hover:bg-blue-50 rounded px-2">Home</a>
     <a href="about.html" class="block py-2 hover:bg-blue-50 rounded px-2">About</a>
     <a href="services.html" class="block py-2 hover:bg-blue-50 rounded px-2">Our Work</a>
     <a href="donations.html" class="block py-2 hover:bg-blue-50 rounded px-2">Donate</a>
@@ -44,7 +53,7 @@
 </script>
 
 <!-- Hero Section -->
-<header class="relative bg-cover bg-center min-h-[80vh] pt-24" style="background-image: url('CATF.avif');">
+<header class="relative hero-background min-h-[80vh] pt-24">
   <div class="absolute inset-0 bg-gradient-to-br from-black via-blue-900 to-transparent flex flex-col justify-center items-center text-white text-center px-4">
     <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Empowering Africa's Children</h1>
     <p class="text-lg md:text-xl max-w-2xl">Providing access to education, nutrition, and opportunities for every child.</p>
