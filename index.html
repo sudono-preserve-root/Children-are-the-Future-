@@ -4,38 +4,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Children Are The Future</title>
-  <link rel="icon" href="favicon.ico">
-  <link rel="manifest" href="manifest.json">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" />
+  <link rel="manifest" href="manifest.json" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
   <script defer data-domain="sudono-preserve-root.github.io" src="https://plausible.io/js/script.js"></script>
 </head>
 <body class="bg-white text-gray-800 leading-relaxed">
 
-<!-- Simplified Navigation -->
+<!-- Navigation -->
 <nav class="bg-white shadow sticky top-0 z-50">
   <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-    <!-- Logo and Organization Name -->
     <a href="index.html" class="flex items-center space-x-2">
       <span class="text-2xl font-bold text-blue-900">CATF</span>
       <span class="hidden sm:inline text-blue-900 font-medium">Children Are The Future</span>
     </a>
-
-    <!-- Desktop Navigation - Simplified -->
     <div class="hidden md:flex space-x-6 text-blue-900 font-medium items-center">
       <a href="about.html" class="hover:underline">About</a>
       <a href="services.html" class="hover:underline">Our Work</a>
       <a href="donations.html" class="bg-yellow-400 text-black px-4 py-2 rounded shadow font-semibold hover:bg-yellow-300 transition">Donate</a>
     </div>
-
-    <!-- Mobile Menu Button -->
     <button id="menuToggle" class="md:hidden text-blue-900 focus:outline-none">
       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
       </svg>
     </button>
   </div>
-
-  <!-- Mobile Navigation - Simplified -->
   <div id="mobileMenu" class="hidden md:hidden px-4 pb-4 space-y-3 text-blue-900 font-medium">
     <a href="about.html" class="block py-2 hover:bg-blue-50 rounded px-2">About</a>
     <a href="services.html" class="block py-2 hover:bg-blue-50 rounded px-2">Our Work</a>
@@ -45,14 +38,14 @@
 </nav>
 
 <script>
-  document.getElementById('menuToggle').addEventListener('click', function () {
+  document.getElementById('menuToggle').addEventListener('click', () => {
     document.getElementById('mobileMenu').classList.toggle('hidden');
   });
 </script>
 
-<!-- Hero Banner -->
+<!-- Hero Section -->
 <header class="relative bg-cover bg-center min-h-[80vh]" style="background-image: url('CATF.avif');">
-  <div class="absolute inset-0 bg-gradient-to-br from-black via-blue-900 to-transparent bg-opacity-60 flex flex-col justify-center items-center text-white text-center px-4">
+  <div class="absolute inset-0 bg-gradient-to-br from-black via-blue-900 to-transparent flex flex-col justify-center items-center text-white text-center px-4">
     <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Empowering Africa's Children</h1>
     <p class="text-lg md:text-xl max-w-2xl">Providing access to education, nutrition, and opportunities for every child.</p>
     <div class="mt-8 space-x-4">
@@ -62,11 +55,11 @@
   </div>
 </header>
 
-<!-- Impact Stats -->
+<!-- Impact Section -->
 <section class="bg-blue-900 text-white py-12">
-  <div class="max-w-5xl mx-auto px-4">
-    <h2 class="text-2xl font-bold mb-8 text-center">Our Impact</h2>
-    <div class="grid md:grid-cols-3 gap-8 text-center">
+  <div class="max-w-5xl mx-auto px-4 text-center">
+    <h2 class="text-2xl font-bold mb-8">Our Impact</h2>
+    <div class="grid md:grid-cols-3 gap-8">
       <div class="bg-white bg-opacity-10 p-6 rounded-lg">
         <h3 class="text-4xl font-bold mb-2">2,000+</h3>
         <p>Books Donated</p>
@@ -83,21 +76,19 @@
   </div>
 </section>
 
-<!-- Our Mission -->
-<section class="py-16 px-6 md:px-20 bg-white">
+<!-- Mission Section -->
+<section class="py-16 px-6 md:px-20 bg-white text-center">
   <div class="max-w-4xl mx-auto">
-    <h2 class="text-3xl font-bold mb-6 text-center">Our Mission</h2>
-    <p class="text-lg mb-6 text-center">
+    <h2 class="text-3xl font-bold mb-6">Our Mission</h2>
+    <p class="text-lg mb-6">
       We believe every child deserves access to education, proper nutrition, and opportunities to thrive. 
       Our work focuses on removing barriers that prevent African children from reaching their full potential.
     </p>
-    <div class="text-center">
-      <a href="about.html" class="inline-block bg-blue-900 text-white px-6 py-2 rounded font-medium hover:bg-blue-800 transition">Learn About Us</a>
-    </div>
+    <a href="about.html" class="inline-block bg-blue-900 text-white px-6 py-2 rounded font-medium hover:bg-blue-800 transition">Learn About Us</a>
   </div>
 </section>
 
-<!-- Programs Preview -->
+<!-- Programs Section -->
 <section class="bg-gray-50 py-16 px-6">
   <div class="max-w-6xl mx-auto">
     <h2 class="text-3xl font-bold mb-8 text-center">Our Programs</h2>
@@ -121,13 +112,13 @@
   </div>
 </section>
 
-<!-- Newsletter CTA -->
+<!-- Newsletter Section -->
 <section class="bg-blue-800 text-white py-12 text-center">
   <div class="max-w-2xl mx-auto px-4">
     <h2 class="text-2xl font-bold mb-4">Stay Connected</h2>
     <p class="mb-6">Join our newsletter to receive updates on our programs and impact.</p>
     <form class="flex flex-col sm:flex-row gap-4 justify-center">
-      <input type="email" placeholder="Your Email Address" class="border p-3 rounded w-full text-gray-800" required>
+      <input type="email" placeholder="Your Email Address" class="border p-3 rounded w-full text-gray-800" required />
       <button class="bg-yellow-400 px-6 py-3 rounded shadow font-semibold hover:bg-yellow-300 transition">Subscribe</button>
     </form>
   </div>
@@ -135,20 +126,16 @@
 
 <!-- Contact Section -->
 <section id="contact" class="py-16 px-6 bg-white">
-  <div class="max-w-4xl mx-auto">
-    <h2 class="text-3xl font-bold mb-6 text-center">Get In Touch</h2>
-    <p class="mb-8 text-center">We'd love to hear from you. Contact us to learn about partnership opportunities or how you can help.</p>
-    
-    <div class="grid md:grid-cols-2 gap-8">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-6">Get In Touch</h2>
+    <p class="mb-8">We'd love to hear from you. Contact us to learn about partnership opportunities or how you can help.</p>
+    <div class="grid md:grid-cols-2 gap-8 text-left">
       <div>
         <h3 class="text-xl font-bold mb-4 text-blue-900">Contact Information</h3>
-        <div class="space-y-4">
-          <p><strong>Email:</strong> kikiafolabi05@gmail.com</p>
-          <p><strong>Phone:</strong> (973)-651-6181</p>
-          <p><strong>Location:</strong> Serving communities across Africa</p>
-        </div>
+        <p><strong>Email:</strong> kikiafolabi05@gmail.com</p>
+        <p><strong>Phone:</strong> (973)-651-6181</p>
+        <p><strong>Location:</strong> Serving communities across Africa</p>
       </div>
-      
       <form class="space-y-4">
         <div class="grid md:grid-cols-2 gap-4">
           <input type="text" placeholder="First Name" class="border p-3 rounded w-full" />
@@ -162,7 +149,7 @@
   </div>
 </section>
 
-<!-- Fixed Donate Button -->
+<!-- Donate Button -->
 <a href="donations.html" class="fixed bottom-6 right-6 bg-yellow-400 text-black px-5 py-3 rounded-full shadow-lg font-semibold hover:bg-yellow-300 transition z-50 flex items-center">
   <span class="hidden sm:inline mr-2">Donate</span>💛
 </a>
