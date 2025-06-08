@@ -23,9 +23,24 @@
     }
     .gallery-img {
       transition: transform 0.3s ease;
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
     }
     .gallery-img:hover {
       transform: scale(1.03);
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1rem;
+    }
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      height: 300px;
     }
   </style>
 </head>
@@ -75,18 +90,48 @@
   </div>
 </section>
 
-<!-- Donation Day Recap -->
+<!-- Historical Donation Gallery -->
 <section class="py-16 px-6 md:px-20 text-center">
-  <h2 class="text-3xl font-bold mb-4 text-blue-900" data-aos="fade-up">October 1st, 2024 – Donation Day</h2>
-  <p class="mb-8 text-lg max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">We distributed meals, drinks, and essentials to the children of Heritage Home. These moments remind us why we do what we do.</p>
-  <div class="grid md:grid-cols-3 gap-6">
-    <img src="donation1.jpg" alt="Smiling child receiving supplies" class="gallery-img rounded shadow w-full object-cover h-64" data-aos="zoom-in">
-    <img src="donation2.jpg" alt="Volunteers delivering food" class="gallery-img rounded shadow w-full object-cover h-64" data-aos="zoom-in" data-aos-delay="100">
-    <img src="donation3.jpg" alt="Group meal gathering" class="gallery-img rounded shadow w-full object-cover h-64" data-aos="zoom-in" data-aos-delay="200">
-    <img src="donation4.jpg" alt="Children with backpacks" class="gallery-img rounded shadow w-full object-cover h-64" data-aos="zoom-in">
-    <img src="donation5.jpg" alt="Smiling girls after receiving donations" class="gallery-img rounded shadow w-full object-cover h-64" data-aos="zoom-in" data-aos-delay="100">
-    <img src="donation6.jpg" alt="Community celebration" class="gallery-img rounded shadow w-full object-cover h-64" data-aos="zoom-in" data-aos-delay="200">
+  <h2 class="text-3xl font-bold mb-4 text-blue-900" data-aos="fade-up">Visit to Heritage Home Orphanage</h2>
+  <h3 class="text-xl text-blue-800 mb-8" data-aos="fade-up" data-aos-delay="100">First Donation Made in May of 2021</h3>
+  
+  <div class="gallery-grid">
+    <div class="gallery-item" data-aos="zoom-in">
+      <img src="donation1.jpg" alt="Children receiving donations at Heritage Home" class="gallery-img">
+    </div>
+    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+      <img src="donation2.jpg" alt="Volunteers distributing supplies" class="gallery-img">
+    </div>
+    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+      <img src="donation3.jpg" alt="Group photo with children" class="gallery-img">
+    </div>
+    <div class="gallery-item" data-aos="zoom-in">
+      <img src="donation4.jpg" alt="Food and supplies being prepared" class="gallery-img">
+    </div>
+    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+      <img src="donation5.jpg" alt="Children enjoying meals" class="gallery-img">
+    </div>
+    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+      <img src="donation6.jpg" alt="Celebration at Heritage Home" class="gallery-img">
+    </div>
+    <div class="gallery-item" data-aos="zoom-in">
+      <img src="donations(7).jpg" alt="Additional donation moment" class="gallery-img">
+    </div>
+    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+      <img src="donations(8).jpg" alt="More happy children" class="gallery-img">
+    </div>
+    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+      <img src="donations(9).jpg" alt="Volunteers interacting with children" class="gallery-img">
+    </div>
+    <div class="gallery-item" data-aos="zoom-in">
+      <img src="donations(10).jpg" alt="Final group photo" class="gallery-img">
+    </div>
   </div>
+  
+  <p class="mt-8 text-lg max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="300">
+    Our first donation event at Heritage Home Orphanage marked the beginning of our mission to support children in need.
+    These precious moments fuel our commitment to continue this important work.
+  </p>
 </section>
 
 <!-- Impact Stats -->
